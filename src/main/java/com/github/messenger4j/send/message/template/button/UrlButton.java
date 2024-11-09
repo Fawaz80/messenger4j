@@ -70,23 +70,23 @@ public final class UrlButton extends Button {
     return title;
   }
 
-  public URL url() {
-    return url;
+ public URL url() {
+    return CommonMethodsUtil.getUrl(url);
   }
 
   public Optional<WebviewHeightRatio> webviewHeightRatio() {
-    return webviewHeightRatio;
+    return CommonMethodsUtil.getWebviewHeightRatio(webviewHeightRatio);
   }
 
   public Optional<Boolean> messengerExtensions() {
-    return messengerExtensions;
+    return CommonMethodsUtil.getMessengerExtensions(messengerExtensions);
   }
 
   public Optional<URL> fallbackUrl() {
-    return fallbackUrl;
+    return CommonMethodsUtil.getFallbackUrl(fallbackUrl);
   }
 
   public Optional<WebviewShareButtonState> webviewShareButtonState() {
-    return webviewShareButtonState;
+     return CommonMethodsUtil.getWebviewShareButtonState(webviewShareButtonState);
   }
 }
