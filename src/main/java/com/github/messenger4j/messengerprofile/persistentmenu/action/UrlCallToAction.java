@@ -64,23 +64,23 @@ public final class UrlCallToAction extends CallToAction {
         title, url, webviewHeightRatio, messengerExtensions, fallbackUrl, webviewShareButtonState);
   }
 
-  public URL url() {
-    return url;
-  }
+    public static URL getUrl(URL url) {
+        return url;
+    }
 
-  public Optional<WebviewHeightRatio> webviewHeightRatio() {
-    return webviewHeightRatio;
-  }
+    public static Optional<WebviewHeightRatio> getWebviewHeightRatio(Optional<WebviewHeightRatio> webviewHeightRatio) {
+        return webviewHeightRatio;
+    }
 
-  public Optional<Boolean> messengerExtensions() {
-    return messengerExtensions;
-  }
+    public static Optional<Boolean> getMessengerExtensions(Optional<Boolean> messengerExtensions) {
+        return messengerExtensions;
+    }
 
-  public Optional<URL> fallbackUrl() {
-    return fallbackUrl;
-  }
+    public static Optional<URL> getFallbackUrl(Optional<URL> fallbackUrl) {
+        return fallbackUrl;
+    }
 
-  public Optional<WebviewShareButtonState> webviewShareButtonState() {
-    return webviewShareButtonState;
-  }
+    public static Optional<WebviewShareButtonState> getWebviewShareButtonState(Optional<WebviewShareButtonState> webviewShareButtonState) {
+        return webviewShareButtonState;
+    }
 }
