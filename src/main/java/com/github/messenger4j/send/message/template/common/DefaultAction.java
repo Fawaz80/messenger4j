@@ -63,23 +63,23 @@ public final class DefaultAction {
         url, webviewHeightRatio, messengerExtensions, fallbackUrl, webviewShareButtonState);
   }
 
-     public static URL getUrl(URL url) {
-        return url;
-    }
+  public URL url() {
+    return CommonMethodsUtil.getUrl(url);
+  }
 
-    public static Optional<WebviewHeightRatio> getWebviewHeightRatio(Optional<WebviewHeightRatio> webviewHeightRatio) {
-        return webviewHeightRatio;
-    }
+  public Optional<WebviewHeightRatio> webviewHeightRatio() {
+    return CommonMethodsUtil.getWebviewHeightRatio(webviewHeightRatio);
+  }
 
-    public static Optional<Boolean> getMessengerExtensions(Optional<Boolean> messengerExtensions) {
-        return messengerExtensions;
-    }
+  public Optional<Boolean> messengerExtensions() {
+    return CommonMethodsUtil.getMessengerExtensions(messengerExtensions);
+  }
 
-    public static Optional<URL> getFallbackUrl(Optional<URL> fallbackUrl) {
-        return fallbackUrl;
-    }
+  public Optional<URL> fallbackUrl() {
+    return CommonMethodsUtil.getFallbackUrl(fallbackUrl);
+  }
 
-    public static Optional<WebviewShareButtonState> getWebviewShareButtonState(Optional<WebviewShareButtonState> webviewShareButtonState) {
-        return webviewShareButtonState;
-    }
+  public Optional<WebviewShareButtonState> webviewShareButtonState() {
+     return CommonMethodsUtil.getWebviewShareButtonState(webviewShareButtonState);
+  }
 }
